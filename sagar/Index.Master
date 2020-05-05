@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.master.cs" Inherits="sagar.Index" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Academic Institute</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="Content/all.css" />
+    <style>
+        .menu i{
+            margin-right: 7px;
+        }
+
+        .dash-card {
+            padding: 50px 30px 50px 100px;
+        }
+
+        .dash-head {
+            font-size: 18px;
+        }
+
+        .dash-body {
+            font-size: 18px;
+        }
+
+        .bg-accent {
+            background-color: #1D2731;
+        }
+
+        .content-head {
+            text-align: center;
+            background-color: #1D2731;
+            color: #FFFFFF;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid mb-3 mt-1">
+            <%--<div class="row bg-accent">
+                <div class="col-12">
+                    <div class="text-center pt-3 pb-3 text-white">
+                        <h1>Islington College</h1>
+                    </div>
+                </div>
+            </div>--%>
+
+            <div class="row">
+                <div class="col-12 col-md-2">
+                    
+                    <div class="list-group menu">
+                        <h3 class="list-group-item border-0 text-center mt-2 bg-dark text-white">
+                            Menu
+                        </h3>
+                        <a href="Index.aspx" class="list-group-item list-group-item-action">
+                            <i class="fas fa-chart-line"></i>Dashboard
+                        </a>
+                        <a href="Class.aspx" class="list-group-item list-group-item-action">
+                            <i class="fas fa-bell"></i>Class
+                        </a>
+                        <a href="Course.aspx" class="list-group-item list-group-item-action">
+                            <i class="fas fa-book"></i>Course
+                        </a>
+                        <a href="CourseStudent Schedule.aspx" class="list-group-item list-group-item-action">
+                            <i class="fas fa-book-open"></i>Course Student Schedule
+                        </a>
+                        <a href="Department.aspx" class="list-group-item list-group-item-action">
+                            <i class="fas fa-university"></i>Department
+                        </a>
+                        <a href="Student.aspx" class="list-group-item list-group-item-action">
+                            <i class="fas fa-child"></i>Student
+                        </a>
+                        <a href="Teacher.aspx" class="list-group-item list-group-item-action">
+                            <i class="fas fa-user-graduate"></i>Teacher
+                        </a>
+                        <a href="TeacherCourse Schedule.aspx" class="list-group-item list-group-item-action">
+                            <i class="fas fa-chalkboard"></i>Teacher Course Schedule
+                        </a>
+                        <a href="TeacherStudent Mapping.aspx" class="list-group-item list-group-item-action">
+                            <i class="fas fa-chalkboard-teacher"></i>Teacher Student Mapping
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+                        </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
